@@ -14,7 +14,8 @@ useEffect(() => {
     .then(response => response.json())
     .then(users => setdata(users)
        );
-}, []);
+}, [0]);
+console.log(data)
 
 
 
@@ -25,6 +26,8 @@ useEffect(() => {
 
         <h1 className = "headerText"> Macro-Bot Shop </h1>
 
+        
+
         <Search 
           handleChange   =    { (e) =>{ setSword(e.target.value) } } 
           value = { Sword}
@@ -33,8 +36,13 @@ useEffect(() => {
         <CardList data ={ filter }/> 
 
         <div className= "footer"></div>
+
+        <h3> &#0169;Avis 2021</h3>
+        
         
       </div> 
+
+      
     )
 
 
