@@ -1,5 +1,13 @@
+body
+{
+    background-color:rgb(40, 70, 80)
+
+}
+
+
 .App {
   text-align: center;
+
 }
 
 .App-logo {
@@ -14,7 +22,6 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -28,6 +35,12 @@
   color: #61dafb;
 }
 
+.card
+{
+  grid: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +48,29 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.allocate
+{
+  
+  width: 85vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+  
+.headerText
+{
+  font-family: 'Bigelow Rules', cursive;
+  font-size: 5em;
+  align-items: center;
+  color:  #0ccac4;
+
+}
+
+.footer
+{
+  margin: 5em;
 }
