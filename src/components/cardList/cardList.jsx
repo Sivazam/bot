@@ -11,21 +11,11 @@ import Card from "../card/card";
 
 // console.log(props.data);
 
-            return(<div className =" allocate" >
-
- 
-            
-                
-                       
+            return(<div className =" allocate" >    
                     {props.data.map(t => (
                      <Card data = { t } />
-                    
                     ))}
-                 
-                 
-                    
-
-              </div>)
+                  </div>)
             }
             
  
